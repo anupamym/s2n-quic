@@ -25,7 +25,6 @@ elif command -v brew &> /dev/null; then
 elif command -v apt-get &> /dev/null; then
   sudo add-apt-repository -r ppa:wireshark-dev/stable
   sudo apt-get update
-  sudo apt --fix-broken install
   sudo add-apt-repository universe
   sudo apt update
   sudo apt-get install pkg-config wireshark-dev tshark -y
